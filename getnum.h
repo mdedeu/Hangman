@@ -1,38 +1,35 @@
 #include <stdarg.h>
 /*
-** Funciones para leer desde la entrada estandar un numero.
-** Reciben como parametro una cadena de caracteres, la cual puede
-** contener un formato igual al utilizado por la funcion printf.
-** Imprimira en salida estandar dicha cadena antes de la lectura del numero
-** En caso de escribir letras se quedan esperando hasta que
-** se ingrese un numero.
-** Si se ingresa un numero seguido de otros caracteres,
-** devolveran el numero ignorando el resto de los caracteres
-*/
+** The objective of these functions is to read numbers from standard input.
+** They receive as a parameter a string of characters,
+** containing the same format as for the printf function.
+** It will print that string before reading the number
+** If you input wrong data, it will keep running. 
+** If you input a number followed by other characters,  the functions will ignore them* */
 
 
 #ifndef _getnum_h
 
 #define _getnum_h
 
-/* funcion que lee de la entrada estandar un numero entero
-** Modo de uso: n = getint("Ingrese un numero entre %d y %d: ", 0, 10);
+/* reads an integer number
+** Example of use: n = getint("Input a number between %d  and %d: ", 0, 10);
 **              a = getint("");
 */
-int getint(const char mensaje[], ...);
+int getint(const char msg[], ...);
 
-/* funcion que lee de la entrada estandar un numero real
-** Modo de uso: idem getint()
+/* reads a real number
+** Example of use: idem getint()
 */
-float getfloat(const char mensaje[], ...);
+float getfloat(const char msg[], ...);
 
-/* funcion que lee de la entrada estandar un numero real de doble precision
-** Modo de uso: idem getint()
+/* Reads a real number with double precision
+** Example of use: idem getint()
 */
-double getdouble(const char mensaje[], ...);
+double getdouble(const char msg[], ...);
 
 
-/* lee S,s,N, o n  */
-int yesNo(const char mensaje[], ...);
+/* reads S or s(for yes) and N or n (for no) */
+int yesNo(const char msg[], ...);
 
 #endif
