@@ -1,3 +1,5 @@
+
+//Código Provisto por la Cátedra de Programación Imperativa del I.T.B.A
 #include <stdio.h>
 #include "getnum.h"
 #include <string.h>
