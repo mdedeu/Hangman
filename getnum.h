@@ -1,3 +1,4 @@
+//Código Provisto por la Cátedra de Programación Imperativa del I.T.B.A
 #include <stdarg.h>
 /*
 ** The objective of these functions is to read numbers from standard input.
