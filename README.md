@@ -1,4 +1,4 @@
-# Basic-Hanged
+# Basic Hangman
 Hey! This is the classical Hanged Game with 3 levels of Difficulty.
 The objective of the game is to guess the word by inputing letters. 
 The game is prepared for terminal. I made it in an hour, so it's probably not bug free.
